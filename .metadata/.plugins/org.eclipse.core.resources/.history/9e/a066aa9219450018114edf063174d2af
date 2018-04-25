@@ -1,0 +1,20 @@
+package com.test;
+
+import org.junit.jupiter.api.Test;
+
+public class Stack {
+    Node first;
+	private class Node<Item>{
+		Item item;
+		Node next;
+	}
+	@Test
+	public void TestHeadAdd() {
+		first = new Node<Integer>();
+		first.item = 1;
+		
+		Node oldfirst = first;
+		first.item = 2;
+		first.next = oldfirst;
+	}
+}
