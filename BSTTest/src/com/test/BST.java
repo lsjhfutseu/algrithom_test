@@ -1,5 +1,7 @@
 package com.test;
 
+import org.junit.jupiter.api.Test;
+
 public class BST<Key extends Comparable<Key>, Value> {
 	private Node root;
 	
@@ -14,7 +16,7 @@ public class BST<Key extends Comparable<Key>, Value> {
 	
 	//put函数
 	public void put(Key key, Value val) {
-		put(root, key, val);
+		root = put(root, key, val);
 	}
 	
 	//以x为根节点的树中插入键值对
@@ -24,8 +26,6 @@ public class BST<Key extends Comparable<Key>, Value> {
 			x = new Node();
 			x.key = key;
 			x.val = val;
-			x.left = null;
-			x.right = null;
 			x.N = 1;
 			return x;
 		}
@@ -34,10 +34,10 @@ public class BST<Key extends Comparable<Key>, Value> {
 			x.val = val;
 		}
 		else if(x.key.compareTo(key) < 0){
-			put(x.right, key, val);
+			x.right = put(x.right, key, val);
 		}
 		else {
-			put(x.left, key, val);
+			x.left = put(x.left, key, val);
 		}
 		//x.N = size(x.left) + size(x.right) + 1;
 		x.N++;
@@ -141,4 +141,16 @@ public class BST<Key extends Comparable<Key>, Value> {
 			return x;
 		}
 	}
-}
+	
+	private void print(Node x) {
+		if(x == null) return;
+		print(x.left);
+		System.out.println(x.key);
+		print(x.right);
+	}
+	
+	public void print() {
+		print(root);
+	}
+}	
+	
