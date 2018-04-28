@@ -5,7 +5,12 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+<<<<<<< HEAD
 			<item value="F:\javaweb\algrithom_test"/>
+=======
+			<item value="F:\taotao\algrithom_test"/>
+			<item value="F:\taotao\algrithom_test\BSTTest"/>
+>>>>>>> 13d0154cb171fa2c1813c07ffbee216c3d4a0cb2
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>

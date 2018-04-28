@@ -2,10 +2,14 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.lang.Comparable"/>
 <fullyQualifiedTypeName name="com.test.BST"/>
+<<<<<<< HEAD
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.Vector"/>
 <fullyQualifiedTypeName name="javax.print.StreamPrintService"/>
 <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+=======
+>>>>>>> 13d0154cb171fa2c1813c07ffbee216c3d4a0cb2
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.junit.jupiter.params.shadow.com.univocity.parsers.common.processor.MultiBeanListProcessor"/>
 </qualifiedTypeNameHistroy>
