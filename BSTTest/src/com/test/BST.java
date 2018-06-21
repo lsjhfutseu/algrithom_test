@@ -3,9 +3,9 @@ package com.test;
 import org.junit.jupiter.api.Test;
 
 public class BST<Key extends Comparable<Key>, Value> {
-	private Node root;
+	public Node root;
 	
-	private class Node{
+	class Node{
 		Key key;   //键
 		Value val; //值
 		Node left; //左子节点
